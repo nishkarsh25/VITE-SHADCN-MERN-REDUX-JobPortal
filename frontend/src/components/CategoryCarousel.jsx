@@ -14,7 +14,8 @@ const category = [
 ]
 
 const CategoryCarousel = () => {
-    
+    const dispatch = useDispatch();
+    const navigate = useNavigate();
     
 
     return 
