@@ -12,7 +12,17 @@ const Applicants = () => {
     const dispatch = useDispatch();
     const {applicants} = useSelector(store=>store.application);
 
-    
+    useEffect(() => {
+        const fetchAllApplicants = async () => {
+            try {
+                const res = await axios.get(`${APPLICATION_API_END_POINT}/${params.id}/applicants`, { withCredentials: true });
+                dispatch(setAllApplicants(res.data.job));
+            } catch (error) {
+                console.log(error);
+            }
+        }
+        fetchAllApplicants();
+    }, []);
     return
 }
 
