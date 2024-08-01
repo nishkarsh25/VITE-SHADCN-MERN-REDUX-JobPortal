@@ -38,7 +38,27 @@ const PostJob = () => {
         setInput({...input, companyId:selectedCompany._id});
     };
 
-    
+    const submitHandler = async (e) => {
+        e.preventDefault();
+        try {
+            setLoading(true);
+            const res = await axios.post(`${JOB_API_END_POINT}/post`, input,{
+                headers:{
+                    'Content-Type':'application/json'
+                },
+                withCredentials:true
+            });
+            if(res.data.success){
+                toast.success(res.data.message);
+                navigate("/admin/jobs");
+            }
+        } catch (error) {
+            toast.error(error.response.data.message);
+        } finally{
+            setLoading(false);
+        }
+    }
+
     return 
 }
 
