@@ -3,5 +3,8 @@ import { Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, Tabl
 import { Badge } from './ui/badge'
 import { useSelector } from 'react-redux'
 
-
+const AppliedJobTable = () => {
+    
+    return
+}
 
