@@ -28,9 +28,17 @@ const PostJob = () => {
     const [loading, setLoading]= useState(false);
     const navigate = useNavigate();
 
-    
-    
+    const { companies } = useSelector(store => store.company);
+    const changeEventHandler = (e) => {
+        setInput({ ...input, [e.target.name]: e.target.value });
+    };
 
+    const selectChangeHandler = (value) => {
+        const selectedCompany = companies.find((company)=> company.name.toLowerCase() === value);
+        setInput({...input, companyId:selectedCompany._id});
+    };
+
+    
     return 
 }
 
