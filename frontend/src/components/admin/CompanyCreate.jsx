@@ -10,5 +10,11 @@ import { toast } from 'sonner'
 import { useDispatch } from 'react-redux'
 import { setSingleCompany } from '@/redux/companySlice'
 
-
+const CompanyCreate = () => {
+    const navigate = useNavigate();
+    const [companyName, setCompanyName] = useState();
+    const dispatch = useDispatch();
+    
+    return
+}
 
