@@ -5,7 +5,13 @@ import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import { setSearchedQuery } from '@/redux/jobSlice';
 
-
+const category = [
+    "Frontend Developer",
+    "Backend Developer",
+    "Data Science",
+    "Graphic Designer",
+    "FullStack Developer"
+]
 
 
 
