@@ -19,4 +19,9 @@ const fitlerData = [
     },
 ]
 
+const FilterCard = () => {
+    
+    
+    
+}
 
