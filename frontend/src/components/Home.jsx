@@ -17,6 +17,14 @@ const Home = () => {
       navigate("/admin/companies");
     }
   }, []);
-  return
+  return (
+    <div>
+      <Navbar />
+      <HeroSection />
+      <CategoryCarousel />
+      <LatestJobs />
+      <Footer />
+    </div>
+  )
 }
 
