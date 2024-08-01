@@ -7,5 +7,12 @@ import { useParams } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { setAllApplicants } from '@/redux/applicationSlice';
 
+const Applicants = () => {
+    const params = useParams();
+    const dispatch = useDispatch();
+    const {applicants} = useSelector(store=>store.application);
 
+    
+    return
+}
 
