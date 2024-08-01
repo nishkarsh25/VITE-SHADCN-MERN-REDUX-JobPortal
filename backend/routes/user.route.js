@@ -3,7 +3,7 @@ import { login, logout, register, updateProfile } from "../controllers/user.cont
 import isAuthenticated from "../middlewares/isAuthenticated.js";
 import { singleUpload } from "../middlewares/mutler.js";
  
-
+const router = express.Router();
 
 
 
