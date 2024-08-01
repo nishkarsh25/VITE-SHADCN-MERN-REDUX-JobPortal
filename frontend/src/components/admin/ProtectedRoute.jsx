@@ -13,5 +13,9 @@ const ProtectedRoute = ({children}) => {
         }
     },[]);
 
-    return 
+    return (
+        <>
+        {children}
+        </>
+    )
 };
