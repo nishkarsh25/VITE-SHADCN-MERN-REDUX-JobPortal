@@ -14,7 +14,9 @@ const Companies = () => {
     const navigate = useNavigate();
     const dispatch = useDispatch();
 
-    
+    useEffect(()=>{
+        dispatch(setSearchCompanyByText(input));
+    },[input]);
     return 
 }
 
