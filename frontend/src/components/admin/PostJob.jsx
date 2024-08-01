@@ -13,5 +13,24 @@ import { Loader2 } from 'lucide-react'
 
 const companyArray = [];
 
+const PostJob = () => {
+    const [input, setInput] = useState({
+        title: "",
+        description: "",
+        requirements: "",
+        salary: "",
+        location: "",
+        jobType: "",
+        experience: "",
+        position: 0,
+        companyId: ""
+    });
+    const [loading, setLoading]= useState(false);
+    const navigate = useNavigate();
 
+    
+    
+
+    return 
+}
 
