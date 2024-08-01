@@ -25,8 +25,16 @@ const CompanySetup = () => {
     const [loading, setLoading] = useState(false);
     const navigate = useNavigate();
 
-    
+    const changeEventHandler = (e) => {
+        setInput({ ...input, [e.target.name]: e.target.value });
+    }
 
+    const changeFileHandler = (e) => {
+        const file = e.target.files?.[0];
+        setInput({ ...input, file });
+    }
+
+    
     
 
     return 
