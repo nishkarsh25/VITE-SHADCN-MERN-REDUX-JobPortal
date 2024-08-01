@@ -35,7 +35,20 @@ const JobDescription = () => {
         }
     }
 
-    
+    useEffect(()=>{
+        const fetchSingleJob = async () => {
+            try {
+                const res = await axios.get(`${JOB_API_END_POINT}/get/${jobId}`,{withCredentials:true});
+                if(res.data.success){
+                    dispatch(setSingleJob(res.data.job));
+                    setIsApplied(res.data.job.applications.some(application=>application.applicant === user?._id)) // Ensure the state is in sync with fetched data
+                }
+            } catch (error) {
+                console.log(error);
+            }
+        }
+        fetchSingleJob(); 
+    },[jobId,dispatch, user?._id]);
 
     
 }
