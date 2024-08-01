@@ -11,4 +11,24 @@ import { toast } from 'sonner'
 import { useSelector } from 'react-redux'
 import useGetCompanyById from '@/hooks/useGetCompanyById'
 
+const CompanySetup = () => {
+    const params = useParams();
+    useGetCompanyById(params.id);
+    const [input, setInput] = useState({
+        name: "",
+        description: "",
+        website: "",
+        location: "",
+        file: null
+    });
+    const {singleCompany} = useSelector(store=>store.company);
+    const [loading, setLoading] = useState(false);
+    const navigate = useNavigate();
+
+    
+
+    
+
+    return 
+}
 
