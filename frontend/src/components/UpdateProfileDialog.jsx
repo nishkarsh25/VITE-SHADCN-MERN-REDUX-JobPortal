@@ -10,5 +10,13 @@ import { USER_API_END_POINT } from '@/utils/constant'
 import { setUser } from '@/redux/authSlice'
 import { toast } from 'sonner'
 
+const UpdateProfileDialog = ({ open, setOpen }) => {
+    
 
+    
+
+
+
+    
+}
 
