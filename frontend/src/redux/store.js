@@ -21,7 +21,12 @@ const persistConfig = {
     storage,
 }
 
-
+const rootReducer = combineReducers({
+    auth:authSlice,
+    job:jobSlice,
+    company:companySlice,
+    application:applicationSlice
+})
 
 
 
