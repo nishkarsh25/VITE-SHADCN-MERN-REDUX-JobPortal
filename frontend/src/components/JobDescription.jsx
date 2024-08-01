@@ -8,5 +8,15 @@ import { setSingleJob } from '@/redux/jobSlice';
 import { useDispatch, useSelector } from 'react-redux';
 import { toast } from 'sonner';
 
+const JobDescription = () => {
+    
 
+    
+
+    
+
+    
+
+    
+}
 
