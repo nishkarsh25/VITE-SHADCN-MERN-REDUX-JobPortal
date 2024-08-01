@@ -5,5 +5,11 @@ import { useDispatch } from 'react-redux';
 import { setSearchedQuery } from '@/redux/jobSlice';
 import { useNavigate } from 'react-router-dom';
 
+const HeroSection = () => {
+    
 
+    
+
+    return 
+}
 
