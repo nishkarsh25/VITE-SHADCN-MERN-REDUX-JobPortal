@@ -28,7 +28,7 @@ const rootReducer = combineReducers({
     application:applicationSlice
 })
 
-
+const persistedReducer = persistReducer(persistConfig, rootReducer)
 
 
 
