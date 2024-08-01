@@ -34,3 +34,4 @@ const Applicants = () => {
     )
 }
 
+export default Applicants
