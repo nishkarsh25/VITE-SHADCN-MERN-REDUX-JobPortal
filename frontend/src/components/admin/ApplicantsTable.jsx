@@ -9,5 +9,11 @@ import axios from 'axios';
 
 const shortlistingStatus = ["Accepted", "Rejected"];
 
+const ApplicantsTable = () => {
+    const { applicants } = useSelector(store => store.application);
 
+    
+
+    return 
+}
 
