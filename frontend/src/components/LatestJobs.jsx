@@ -19,3 +19,4 @@ const LatestJobs = () => {
     )
 }
 
+export default LatestJobs
