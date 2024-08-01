@@ -64,3 +64,4 @@ const CompaniesTable = () => {
     )
 }
 
+export default CompaniesTable
