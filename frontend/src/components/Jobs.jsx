@@ -8,7 +8,8 @@ import { motion } from 'framer-motion';
 // const jobsArray = [1, 2, 3, 4, 5, 6, 7, 8];
 
 const Jobs = () => {
-    
+    const { allJobs, searchedQuery } = useSelector(store => store.job);
+    const [filterJobs, setFilterJobs] = useState(allJobs);
 
     
 
