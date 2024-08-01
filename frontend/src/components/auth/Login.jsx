@@ -22,9 +22,32 @@ const Login = () => {
     const navigate = useNavigate();
     const dispatch = useDispatch();
 
-   
+    const changeEventHandler = (e) => {
+        setInput({ ...input, [e.target.name]: e.target.value });
+    }
 
-    
+    const submitHandler = async (e) => {
+        e.preventDefault();
+        try {
+            dispatch(setLoading(true));
+            const res = await axios.post(`${USER_API_END_POINT}/login`, input, {
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                withCredentials: true,
+            });
+            if (res.data.success) {
+                dispatch(setUser(res.data.user));
+                navigate("/");
+                toast.success(res.data.message);
+            }
+        } catch (error) {
+            console.log(error);
+            toast.error(error.response.data.message);
+        } finally {
+            dispatch(setLoading(false));
+        }
+    }
     
     return
 }
