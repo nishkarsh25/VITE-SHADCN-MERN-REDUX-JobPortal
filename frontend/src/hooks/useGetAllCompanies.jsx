@@ -22,3 +22,4 @@ const useGetAllCompanies = () => {
     },[])
 }
 
+export default useGetAllCompanies
