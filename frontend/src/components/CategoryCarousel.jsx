@@ -13,5 +13,10 @@ const category = [
     "FullStack Developer"
 ]
 
+const CategoryCarousel = () => {
+    
+    
 
+    return 
+}
 
