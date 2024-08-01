@@ -14,7 +14,17 @@ import { Loader2 } from 'lucide-react'
 
 const Signup = () => {
 
-    
+    const [input, setInput] = useState({
+        fullname: "",
+        email: "",
+        phoneNumber: "",
+        password: "",
+        role: "",
+        file: ""
+    });
+    const {loading,user} = useSelector(store=>store.auth);
+    const dispatch = useDispatch();
+    const navigate = useNavigate();
 
     
     
