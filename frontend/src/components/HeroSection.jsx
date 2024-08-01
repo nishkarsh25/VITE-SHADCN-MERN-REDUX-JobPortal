@@ -10,7 +10,10 @@ const HeroSection = () => {
     const dispatch = useDispatch();
     const navigate = useNavigate();
 
-    
+    const searchJobHandler = () => {
+        dispatch(setSearchedQuery(query));
+        navigate("/browse");
+    }
 
     return 
 }
