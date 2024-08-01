@@ -13,8 +13,14 @@ import { setLoading, setUser } from '@/redux/authSlice'
 import { Loader2 } from 'lucide-react'
 
 const Login = () => {
-    
-    
+    const [input, setInput] = useState({
+        email: "",
+        password: "",
+        role: "",
+    });
+    const { loading,user } = useSelector(store => store.auth);
+    const navigate = useNavigate();
+    const dispatch = useDispatch();
 
    
 
