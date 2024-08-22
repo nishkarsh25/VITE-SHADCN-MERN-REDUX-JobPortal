@@ -30,7 +30,7 @@ The Job Portal Application is a modern web application designed to streamline th
 
 ## Live Demo
 
-You can try out the live demo of the app [here](https://mern-netflixclone-1.onrender.com).
+You can try out the live demo of the app [here](https://vite-shadcn-mern-redux-jobportal-2.onrender.com).
 
 ## Folder Structure
 
